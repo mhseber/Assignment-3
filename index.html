@@ -16,7 +16,7 @@
     <header class="container mx-auto">
         <!-- nav section -->
         <div class="navbar bg-base-100">
-            <div class="navbar-start">
+            <div class="navbar-start lg:ml-0 ml-5">
 
                 <i
                     class="fa-solid fa-arrow-up rotate-45 border-23 w-8 h-8 text-center  text-xl  bg-[#ABEF5F] rounded-full"></i>
@@ -31,18 +31,19 @@
                     <li class="text-[#737373]"><a>Contact Us</a></li>
                 </ul>
             </div>
-            <div class="navbar-end flex space-x-5">
+            <div class=" hidden navbar-end lg:flex space-x-5 ">
                 <h1><i
                         class="  fa-solid fa-magnifying-glass pt-3 text-center text-[#737373] bg-[#E9E9E9] h-10 w-10 rounded-full "></i>
                 </h1>
                 <h1><i
                         class="fa-solid fa-cart-shopping pt-3 text-center text-[#737373] bg-[#E9E9E9] h-10 w-10 rounded-full"></i>
                 </h1>
-                <a class="btn bg-[#ABEF5F] rounded-full  text-[#1C1C1C] text-lg font-[500]">Book Consult <i
-                        class="fa-solid fa-arrow-up rotate-45 border-23 w-8 h-8 text-center  text-xl  bg-black text-white rounded-full"></i></a>
+
             </div>
-            <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <a class="btn lg:ml-5 bg-[#ABEF5F] rounded-full  text-[#1C1C1C] text-lg font-[500]">Book Consult <i
+                    class="fa-solid fa-arrow-up rotate-45 border-23 w-8 h-8 text-center  text-xl  bg-black text-white rounded-full"></i></a>
+            <div class="dropdown ">
+                <div tabindex="0" role="button" class="btn btn-ghost ml-5  lg:hidden  ">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -88,23 +89,33 @@
             <div class="lg:grid-cols-1 lg:flex lg:justify-evenly p-20  ">
                 <div>
                     <div>
-                        <img class="" src="assets/Vector.png" alt="">
+                        <img class="hidden lg:block" src="assets/Vector.png" alt="">
                         <button class=" btn btn-sm bg-white text-black rounded-full  ml-20 ">About Us <i
                                 class="fa-solid fa-arrow-up rotate-90"></i></button>
-                        <h1 class="font-bold w-auto h-25 text-5xl">We design thoughtful, <br> liveable spaces</h1>
+                        <h1 class="font-bold w-auto h-25 lg:text-5xl text-4xl mb-4">We design thoughtful, <br> liveable
+                            spaces</h1>
+                        <p class="lg:w-[559.95px] h-[52px] text-base font-medium ">Crafting meaningful experiences
+                            requires
+                            empathy, creativity,
+                            precision,
+                            and a commitment to
+                            excellence.</p>
                     </div>
                     <!-- box -->
-                    <div class="space-y-4 mt-5">
-                        <div class="bg-white  flex  rounded-lg  w-[511.97px] h-[88.15px] justify-evenly">
-                            <img src="assets/commercial.png" alt="">
+                    <div class="space-y-6 mt-5">
+                        <div
+                            class="bg-white p-6   flex  rounded-lg  lg:w-[559.97px] h-[136.15px] justify-start gap-10 items-center">
+                            <img class="" src="assets/commercial.png" alt="">
                             <div>
                                 <p class=" w-[118px] h-[26px] text-xl font-extrabold  text-[#494949]">Commercial</p>
                                 <h6 class="text-[#737373] ">With its expansive interior, high ceilings, and open <br>
                                     layout, this
                                     design is perfect.</h6>
+
                             </div>
                         </div>
-                        <div class="bg-white  flex  rounded-lg  w-[511.97px] h-[88.15px] justify-evenly">
+                        <div
+                            class="bg-white p-6  flex  rounded-lg  lg:w-[559.97px] h-[136.15px] justify-start gap-10 items-center">
                             <img src="assets/residential.png" alt="">
                             <div>
                                 <p class=" w-[118px] h-[26px] text-xl font-extrabold  text-[#494949]">Residential</p>
@@ -216,11 +227,12 @@
                 <!--  img box 1 -->
                 <div class="lg:flex gap-3">
                     <div
-                        class="w-[772px] h-[223.3px] border border-[#E9E9E9] rounded-2xl flex space-x-3 space-y-3 p-5 ">
+                        class="lg:w-[772px] h-[223.3px] border border-[#E9E9E9] rounded-2xl flex space-x-3 space-y-3 p-5 ">
                         <img class="border border-dashed rounded-2xl" src="assets/img1.png" alt="">
                         <div>
                             <h1 class="w-[440px] h-[29px] text-2xl font-extrabold">Commercial</h1>
-                            <p class="w-[440px] h-[78px] text-base font-medium text-[#737373]">Our commercial projects
+                            <p class="lg:w-[440px] h-[78px] text-base font-medium text-[#737373]">Our commercial
+                                projects
                                 combine
                                 functionality and style, creating
                                 spaces that
@@ -241,14 +253,14 @@
             </div>
             <!-- img box 2 -->
             <div class=" lg:flex justify-center gap-x-3 mt-3 ">
-                <div class=" w-[400px] h-[223.3px] p-5 border border-[#E9E9E9] rounded-2xl">
+                <div class="w-[400px] h-[223.3px] p-5 border border-[#E9E9E9] rounded-2xl">
                     <img src="assets/img3.png" alt="">
                 </div>
-                <div class="w-[772px] h-[223.3px] border border-[#E9E9E9] rounded-2xl flex space-x-3 space-y-3 p-5 ">
+                <div class="lg:w-[772px] h-[223.3px] border border-[#E9E9E9] rounded-2xl flex space-x-3 space-y-3 p-5 ">
                     <img class="border border-dashed rounded-2xl" src="assets/img4.png" alt="">
                     <div>
                         <h1 class="w-[440px] h-[29px] text-2xl font-extrabold">Commercial</h1>
-                        <p class="w-[440px] h-[78px] text-base font-medium text-[#737373]">Our commercial projects
+                        <p class=" lg:w-[440px] h-[78px] text-base font-medium text-[#737373]">Our commercial projects
                             combine
                             functionality and style, creating
                             spaces that
